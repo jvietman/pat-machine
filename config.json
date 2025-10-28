@@ -1,0 +1,20 @@
+{
+    "who gets the pats": "template.png",
+    "move": true,
+    "squish": true,
+    "mirror": false,
+    "speed": 10,
+    "size": [107, 109],
+    "bgcolor": [255, 255, 255],
+    "center": [0, 0],
+    "hand": [0, 0],
+    "squishyness": 2,
+
+    "filename": "pats",
+    "open when done": true,
+    "exportresources": false,
+    "exportconfig": false,
+    
+    "movesteps": [[0, 0], [2, 0], [4, 0], [2, 0], [-1, 0]],
+    "squishsteps": [3, -2, -12, -6, -3]
+}
