@@ -1,6 +1,7 @@
 from PIL import Image
 from vector2 import *
 
+
 def getframe(file, frame):
     gif = file
 
@@ -11,6 +12,7 @@ def getframe(file, frame):
         return img
     except EOFError:
         print("EOFError")
+
 
 def gifconvert(file, res: vector2):
     gif = []
@@ -24,7 +26,7 @@ def gifconvert(file, res: vector2):
 
             gif.append(copy)
 
-            img.seek(frame+1)
+            img.seek(frame + 1)
             frame += 1
         except EOFError:
             img.close()
