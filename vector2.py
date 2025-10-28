@@ -2,7 +2,7 @@ class vector2:
     def __init__(self, x, y):
         self.x = x
         self.y = y
-    
+
     # change methods
     def move(self, pos):
         self.x += pos.x
@@ -10,7 +10,7 @@ class vector2:
 
     # return methods
     def string(self):
-        return "("+str(self.x)+","+str(self.y)+")"
+        return "(" + str(self.x) + "," + str(self.y) + ")"
 
     def equals(self, pos):
         if self.x == pos.x and self.y == pos.y:
@@ -20,7 +20,7 @@ class vector2:
 
     def plus(self, pos):
         return vector2(int(self.x + pos.x), int(self.y + pos.y))
-    
+
     def minus(self, pos):
         return vector2(int(self.x - pos.x), int(self.y - pos.y))
 
@@ -29,10 +29,13 @@ class vector2:
 
     def divided(self, pos):
         return vector2(int(self.x / pos.x), int(self.y / pos.y))
-    
-    def range(self, radius): # return a range (two positions) that has a certain radius
-        return [vector2(self.x, self.y).minus(radius), vector2(self.x, self.y).plus(radius)]
-    
+
+    def range(self, radius):  # return a range (two positions) that has a certain radius
+        return [
+            vector2(self.x, self.y).minus(radius),
+            vector2(self.x, self.y).plus(radius),
+        ]
+
     def insiderange(self, pos1, pos2):
         # psst, this method was made with ChatGPT ;)
 
